@@ -3,8 +3,9 @@
 这是一个基于纯汇编语言绕过动/静态检测的Shellcode Loader，也可以直接当做免杀使用，使用了2048位秘钥的RSA进行防止逆向，可以有效避免被溯源，当然，需要携带秘钥作为启动参数
 
 ### Requirements:
-开发环境为VS 2017，当然你也可以适当更改代码使得它可以在新版运行
-shellcode要求为32位的shellcode，当然，你可以在 https://github.com/Yeuoly/0xUBypass/blob/master/WindowsShellcodeInjector/WindowsShellcodeInjector.cpp#L41 这里修改HEAVENS GATE，取消天堂门，从而适配64位，一切按照大家的需求
+开发环境为VS 2017，当然你也可以适当更改代码使得它可以在新版运行，编译为32位的
+
+shellcode要求为32位的shellcode，当然，你可以在 https://github.com/Yeuoly/0xUBypass/blob/master/WindowsShellcodeInjector/WindowsShellcodeInjector.cpp#L41 这里看到提升为64位的方法，即在你的shellcode中加入天堂门，编译出来的程序是32位的，所以shellcode得是32位，加入天堂门以后就可以变成64位
 
 ### Bypass
 操作系统：Win10 64位
